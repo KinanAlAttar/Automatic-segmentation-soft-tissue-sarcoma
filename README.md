@@ -12,6 +12,13 @@ There is a total of 1246 CT-scan images comprising both trian, test, validation 
 The data was obainted from
 https://www.kaggle.com/4quant/soft-tissue-sarcoma/notebooks
 
+![](/assets/images/STS_003_27_.png "ct-scan")
+<img src="/assets/images/tumor-overlaid-on-ct-scan.PNG" alt="image-overlaid-with-mask" width="256" height="256">
+
+On the left you can see the CT-scan image and on the right the mask is overlaid on top of the image. Here, the mask indicates
+
+the position of the tumor.
+
 The data was also augmented and had a number of transformations applied to it,
 
 The following transofrmations were applied to the data,
@@ -33,3 +40,8 @@ Data augmentation helped in improving that and also aided in preventing the mode
 Change the file paths for x_train/val and y_train/val in `ct-scan-seg.py` with your appropriate paths,
 
 and simply run `ct-scan-seg.py`
+
+# Results
+![](/assets/images/image-vs-predicted.PNG "results-pred")
+![](/assets/images/model-iou-score.PNG "model-iou-score-vs-epoch")
+![](/assets/images/model-val-loss.PNG "model-val-loss-vs-epoch")
