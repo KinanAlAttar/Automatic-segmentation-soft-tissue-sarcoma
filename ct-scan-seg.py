@@ -10,8 +10,8 @@ import matplotlib.pyplot as plt
 x_train_dir = os.path.join('./', 'ct_images_dir')
 y_train_dir = os.path.join('./', 'mask_images_dir')
 
-x_test_dir = os.path.join(DATA_DIR, 'ct_images_test_dir')
-y_test_dir = os.path.join(DATA_DIR, 'mask_images_test_dir')
+x_test_dir = os.path.join('./', 'ct_images_test_dir')
+y_test_dir = os.path.join('./', 'mask_images_test_dir')
 
 x_valid_dir = os.path.join('./', 'ct_images_valid_dir')
 y_valid_dir = os.path.join('./', 'mask_images_valid_dir')
