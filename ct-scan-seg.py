@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 x_train_dir = os.path.join('./', 'ct_images_dir')
 y_train_dir = os.path.join('./', 'mask_images_dir')
 
+x_test_dir = os.path.join(DATA_DIR, 'ct_images_test_dir')
+y_test_dir = os.path.join(DATA_DIR, 'mask_images_test_dir')
+
 x_valid_dir = os.path.join('./', 'ct_images_valid_dir')
 y_valid_dir = os.path.join('./', 'mask_images_valid_dir')
 
@@ -303,4 +306,36 @@ plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.savefig('./ct-losses-figs.png')
+
+test_dataset = Dataset(
+    x_test_dir,
+    y_test_dir,
+    classes=CLASSES,
+    augmentation=get_validation_augmentation(),
+    preprocessing=get_preprocessing(preprocess_input),
+)
+
+test_dataloader = Dataloder(test_dataset, batch_size=1, shuffle=False)
+
+# load model
+model.load_weights('best_model.h5')
+
+print("Loss: {:.5}".format(scores[0]))
+for metric, value in zip(metrics, scores[1:]):
+    print("mean {}: {:.5}".format(metric.__name__, value))
+
+n = 5
+ids = np.random.choice(np.arange(len(test_dataset)), size=n)
+
+for i in ids:
+
+    image, gt_mask = test_dataset[i]
+    image = np.expand_dims(image, axis=0)
+    pr_mask = model.predict(image).round()
+
+    visualize(
+        image=denormalize(image.squeeze()),
+        gt_mask=gt_mask[..., 0].squeeze(),
+        pr_mask=pr_mask[..., 0].squeeze(),
+    )
 
