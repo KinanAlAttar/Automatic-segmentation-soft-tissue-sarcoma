@@ -37,6 +37,9 @@ I initially was training the model without data augmentation and found that my m
 Data augmentation helped in improving that and also aided in preventing the model from overfitting. 
 
 # Training & Testing The Model
+Make sure you have all the libraries installed, that is, 
+Tensorflow, Keras, segmentation-models, cv2, albumentations, etc.
+
 Change the file paths for x_train/val and y_train/val in `ct-scan-seg.py` with your appropriate paths,
 
 and simply run `ct-scan-seg.py`
