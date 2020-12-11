@@ -29,10 +29,7 @@ I initially was training the model without data augmentation and found that my m
 
 Data augmentation helped in improving that and also aided in preventing the model from overfitting. 
 
-# Training The Model
+# Training & Testing The Model
 Change the file paths for x_train/val and y_train/val in `ct-scan-seg.py` with your appropriate paths,
 
 and simply run `ct-scan-seg.py`
-
-# Testing The Model
-Simply run `ct-scan-seg-test.py`
