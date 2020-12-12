@@ -1,5 +1,5 @@
 # Automatic Segmentation of Soft Tissue Sarcoma
-CT-scan images of patients with soft tissue sarcoma were segmented using U-Net architecture
+CT-scan images of patients with soft tissue sarcoma were segmented using a U-Net architecture
 
 
 I followed and modified the example from the repo below to obtain reasonable results from training the model,
