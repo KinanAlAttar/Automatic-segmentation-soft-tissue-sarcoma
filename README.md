@@ -6,7 +6,7 @@ I followed and modified the example from the repo below to obtain reasonable res
 https://github.com/qubvel/segmentation_models/blob/master/examples/binary%20segmentation%20(camvid).ipynb
 
 # Data
-There is a total of 1246 CT-scan images comprising both trian, test, validation data. These images are from actual patients with soft tissue sarcoma.
+There is a total of 1246 CT-scan images comprising both trian, test, and validation data. These images are from actual patients with soft tissue sarcoma.
 (a type of cancer that affects the bones and soft tissue)
 
 The data was obainted from
