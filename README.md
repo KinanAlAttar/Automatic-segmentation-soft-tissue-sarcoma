@@ -10,7 +10,7 @@ There is a total of 1246 CT-scan images comprising both trian, test, and validat
 (a type of cancer that affects the bones and soft tissue)
 
 The data was obainted from
-https://www.kaggle.com/4quant/soft-tissue-sarcoma/notebooks
+https://www.kaggle.com/4quant/soft-tissue-sarcoma/
 
 ![](/assets/images/STS_003_27_.png "ct-scan")
 <img src="/assets/images/tumor-overlaid-on-ct-scan.PNG" alt="image-overlaid-with-mask" width="256" height="256">
