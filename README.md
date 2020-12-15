@@ -15,7 +15,7 @@ https://www.kaggle.com/4quant/soft-tissue-sarcoma/
 ![](/assets/images/STS_003_27_.png "ct-scan")
 <img src="/assets/images/tumor-overlaid-on-ct-scan.PNG" alt="image-overlaid-with-mask" width="256" height="256">
 
-On the left you can see the CT-scan image and on the right the mask is overlaid on top of the image. Here, the mask indicates the position of the tumor.
+On the left you can see a CT-scan image and on the right a mask overlaid on top of a different image. Here, the mask indicates the position of the tumor.
 
 The data was also augmented and had a number of transformations applied to it,
 
