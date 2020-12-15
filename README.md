@@ -1,4 +1,4 @@
-# Automatic Segmentation of Soft Tissue Sarcoma
+# Automatic Segmentation of Soft Tissue Sarcoma (Kaggle Challenge)
 CT-scan images of patients with soft tissue sarcoma were automatically segmented using a U-Net architecture
 
 
