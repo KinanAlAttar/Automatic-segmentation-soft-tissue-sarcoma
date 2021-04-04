@@ -6,8 +6,8 @@ I followed and modified the example from the repo below to obtain reasonable res
 https://github.com/qubvel/segmentation_models/blob/master/examples/binary%20segmentation%20(camvid).ipynb
 
 # Data
-There is a total of 1246 CT-scan images comprising both trian, test, and validation data. These images are from actual patients with soft tissue sarcoma.
-(a type of cancer that affects the bones and soft tissue)
+There is a total of 1246 CT-scan images comprising both trian, test, and validation data. These images are from actual patients with soft tissue sarcoma
+(a type of cancer that affects the bones and soft tissue).
 
 The data was obainted from
 https://www.kaggle.com/4quant/soft-tissue-sarcoma/
@@ -15,7 +15,7 @@ https://www.kaggle.com/4quant/soft-tissue-sarcoma/
 ![](/assets/images/STS_003_27_.png "ct-scan")
 <img src="/assets/images/tumor-overlaid-on-ct-scan.PNG" alt="image-overlaid-with-mask" width="256" height="256">
 
-On the left you can see a CT-scan image and on the right a mask (which refers to the location of the tumor) overlaid on top of a different CT-scan image. 
+On the left you can see a CT-scan image and on the right a mask (which refers to the location of the tumor) overlaid on top of a CT-scan image. 
 
 The data was also augmented and had a number of transformations applied to it,
 
