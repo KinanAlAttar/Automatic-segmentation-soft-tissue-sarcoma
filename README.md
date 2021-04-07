@@ -43,7 +43,7 @@ Change the file paths for x_train/val/test and y_train/val/test in `ct-scan-seg.
 and simply run `ct-scan-seg.py`
 
 # Using PBS
-If your training your model on a cluster (which I have), I've added the pbs script that I used. Hope that helps!
+If you're training your model on a cluster (which I have), I've added the pbs script that I used. Hope that helps!
 
 # Results
 ![](/assets/images/image-vs-predicted.PNG "results-pred")
