@@ -13,4 +13,4 @@ source $HOME/osc_classes/PHYSICS6820/mypython/bin/activate
 which python
 module load cuda/10.1.168
 
-time python3 kaggle-pet-data.py
+time python3 ct-scan-seg.py
